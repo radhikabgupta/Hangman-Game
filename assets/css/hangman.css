@@ -1,0 +1,142 @@
+
+body {
+    background: #000;
+    font-family: 'Mr Dafoe', cursive,"Baskerville Old Face", "Goudy Old Style", Garamond, serif;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .wrappper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .wrappper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  canvas {
+    color: #fff;
+    border: #fff dashed 2px;
+    padding: 15px;
+  }
+  
+  p {
+    font-size: 1.6em;
+  }
+  
+  #alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 1300px; 
+  }
+  #alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;    
+    background: #f2ede8;
+    color: #63390e;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: solid 1px #fff;
+  }
+  #alphabet li:hover {
+    background: #378DBC;
+    border: solid 2px #fff;
+    color: #fff;
+  }
+  
+  #my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+  }
+  
+  .active {
+    opacity: 0.4;
+    filter: alpha(opacity=60);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default;
+  }
+  .active:hover {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  
+  #mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+  }
+  
+  button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: #79a6be;
+    color: #fff;
+    border: solid 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+  }
+  button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #79a6be;
+    border: solid 1px #fff;
+    color: #b30059;
+  }
+  
+  @media screen and (max-width: 980px) {
+    #alphabet {
+      padding: 0 0 0 15px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #alphabet {
+      padding: 0 0 0 25px;
+    }
+  }
