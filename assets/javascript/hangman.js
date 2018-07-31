@@ -17,7 +17,8 @@ window.onload = function () {
 
     // Get elements
     var myAudio = document.getElementById("myAudio");  
-    var audioElement = document.createElement("audio");         
+    //ar audioElement = document.createElement("audio");         
+    var audioElement = document.getElementById("audioElement");          
     var showLives = document.getElementById("mylives");
     var showCatagory = document.getElementById("scatagory");
     var getHint = document.getElementById("hint");
@@ -88,10 +89,11 @@ window.onload = function () {
           audioElement.play();    
 
           var myImage = document.getElementById("gameImg");
-          myImage.setAttribute("width", "400");
-          myImage.setAttribute("height", "400");          
+          myImage.setAttribute("width", "200");
+          myImage.setAttribute("height", "200");          
           var cImage =  artistImages [hintIndex];
           myImage.setAttribute("src", cImage);
+          document.getElementById('audioElement').style.visibility = "visible";
         }
       }
     }
@@ -132,6 +134,9 @@ window.onload = function () {
       word = word.replace(/\s/g, "-");
       console.log("word after replace", word);
 
+//audioElement
+
+document.getElementById('audioElement').style.visibility = "hidden";
       buttons();
       geusses = [ ];
       lives = 10;
