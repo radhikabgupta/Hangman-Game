@@ -1,4 +1,4 @@
-# Week-3 - HW-2: 80s-Hangman-Game
+# Week-3 JavaScript Homework: 80s-Hangman-Game (Challenge)
 Try to guess 80's bands name in this JavaScript hangman game!
 
 ### Technologies Used
