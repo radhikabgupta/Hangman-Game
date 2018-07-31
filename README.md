@@ -10,4 +10,4 @@ Try to guess 80's bands name in this JavaScript hangman game!
 [80s-Hangman-Game Link](https://radhikabgupta.github.io/Hangman-Game/)
 
 
-![Hangman-Game](https://raw.githubusercontent.com/radhikabgupta/Psychic-Game/master/assets/images/user_interface.jpg)
+![Hangman-Game](https://raw.githubusercontent.com/radhikabgupta/Hangman-Game/master/assets/images/user_interface.jpg)
