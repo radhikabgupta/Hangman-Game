@@ -3,15 +3,16 @@ body {
     background: #000;
     font-family: 'Mr Dafoe', cursive,"Baskerville Old Face", "Goudy Old Style", Garamond, serif;
     color: #fff;
-    height: 100%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
+    width: 100%;
+    text-align: center;    
+    font-size: 16px;
+    font-weight: 300;
   }
   
   .wrappper {
-    width: 100%;
-    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    margin: auto;
   }
   
   .wrappper:after {
@@ -27,13 +28,30 @@ body {
   }
   
   p {
-    font-size: 1.6em;
+    font-size: 1.0em;
   }
   
+#leftCell {
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 5opx;
+}
+
+#rightCell {
+  margin-top: 50px;  
+  padding-top: 5opx;
+  text-align: center;
+}
+
+#gameImg {
+  width: 250px;
+  height: auto;
+  margin-bottom: 25px;
+}
   #alphabet {
-    margin: 15px auto;
-    padding: 0;
-    max-width: 1300px; 
+    margin: 5px auto;
+    padding: 0px;
+    max-width: 900px; 
   }
   #alphabet:after {
     content: "";
@@ -43,12 +61,12 @@ body {
   
   #alphabet li {
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0px 8px 8px 5px;
     list-style: none;
-    width: 35px;
-    height: 30px;
-    padding-top: 10px;
-    padding-bottom: 5px;    
+    width: 18px;
+    height: 18px;
+    padding-top: 5px;
+    padding-bottom: 10px;    
     background: #f2ede8;
     color: #63390e;
     cursor: pointer;
@@ -62,6 +80,10 @@ body {
     background: #378DBC;
     border: solid 2px #fff;
     color: #fff;
+  }
+
+  #buttons {
+    text-align: center;
   }
   
   #my-word {
@@ -77,7 +99,7 @@ body {
     margin: 0;
     display: inline-block;
     padding: 0 10px;
-    font-size: 1.6em;
+    font-size: 1.1em;
   }
   
   .active {
@@ -100,11 +122,13 @@ body {
   }
   
   #mylives {
-    font-size: 1.6em;
+    font-size: 1.0em;
     text-align: center;
     display: block;
   }
   
+  
+
   button {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -115,9 +139,9 @@ body {
     border: solid 1px #fff;
     text-decoration: none;
     cursor: pointer;
-    font-size: 1.2em;
-    padding: 18px 10px;
-    width: 180px;
+    font-size: 1.0em;
+    padding: 10px 8px;
+    width: 120px;
     margin: 10px;
     outline: none;
   }
