@@ -1,37 +1,77 @@
 <!DOCTYPE>
 <html>
+
 <head>
   <title>Hangman Game</title>
-  <link rel="icon" sizes="32x32" href="assets/images/IconImage.png">  
+  <link rel="icon" sizes="32x32" href="assets/images/IconImage.png">
 
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="assets/css/hangman.css">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <script src="assets/javascript/hangman.js" type="text/javascript"></script>
-  
+
 </head>
+
 <body>
 
-  <div class="wrapper">
-    <img id="phychicImg" src="assets/images/banner.jpg" alt="80's Hangman Game">
-    <br>
-    <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
-  </div>
-  <div class="wrapper">
-    <div id="buttons">
-    </div>  
-    <br>
-    <img id="gameImg" src="assets/images/game.jpg" height="400" width="400" alt="80's Hangman Game">    
-    <p id="catagoryName"></p>
-    <div id="hold">
-    </div>
-    <p id="mylives"></p>
-    <p id="clue"></p>  
+  <div class="mycontent">
     <div class="container">
-      <button id="hint"><strong>Hint</strong></button>
-      <button id="reset"><strong>Play again</strong></button>
-    </div>    
-</div>
+      <div class="row">
+        <section class="col-md-12">
+          <div class="col-md-12 mysection">
+
+            <div class="wrapper">
+              <img id="phychicImg" src="assets/images/banner.jpg" alt="80's Hangman Game" height="100px" width="auto">
+              <br>
+              <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+            </div>
+
+            <div class="wrapper">
+              <div id="buttons">
+              </div>
+
+              <table>
+                <tr>
+                  <td width="25%"></td>
+                  <td width="25%">
+                    <div id="leftCell" class="col-md-6">
+                      <img id="gameImg" src="assets/images/game.jpg" alt="80's Hangman Game">
+                      <br>
+                      <audio controls id="audioElement">
+                        <br>
+                        <source src="horse.ogg" type="audio/ogg">
+                      </audio>
+                    </div>
+                  </td>
+                  <td id="rightCell" width="25%">
+                    <div class="col-md-6">
+                      <p id="catagoryName"></p>
+                      <div id="hold">
+                      </div>
+                      <p id="mylives"></p>
+                      <p id="clue"></p>
+                      <div class="container">
+                        <button id="hint">
+                          <strong>Hint</strong>
+                        </button>
+                        <button id="reset">
+                          <strong>Play again</strong>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%"></td>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
